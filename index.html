@@ -3,44 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courtney Cline | Portfolio</title>
+
+    <title>Courtney Cline | Professional Portfolio</title>
+
+    <style>
+        /* General website design */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #263238;
+            line-height: 1.6;
+        }
+
+        /* Navigation menu */
+        nav {
+            background-color: #17324d;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #8dd3c7;
+        }
+
+        /* Top section */
+        header {
+            background-color: #244f73;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        /* Main page sections */
+        section {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: #244f73;
+            border-bottom: 3px solid #8dd3c7;
+            padding-bottom: 8px;
+        }
+
+        /* Skills */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .skills-list li {
+            background-color: #dff3ef;
+            color: #17324d;
+            padding: 8px 14px;
+            border-radius: 20px;
+        }
+
+        /* Project cards */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: #f4f6f8;
+            padding: 20px;
+            border-left: 5px solid #244f73;
+            border-radius: 6px;
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            color: #244f73;
+        }
+
+        /* Links */
+        a {
+            color: #176b87;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #17324d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Makes the website work better on phones */
+        @media (max-width: 650px) {
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                margin: 15px;
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Courtney Cline</h1>
-    <p>Business student interested in AI, analytics, and technology.</p>
 
-    <h2>About Me</h2>
-    <p>
-        I am a Junior at the David Eccles School of Business at the University of Utah. I want to major in Information Systems, with a minor in Entrepreneurship. I am interested in learning more about AI and information systems in the business world. I aim to graduate in May of 2028 and explore my future field of career interest shortly afterwards.  
-    </p>
+    <!-- Navigation menu -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <h2>Skills</h2>
-    <ul>
-        <li>Microsoft Excel</li>
-        <li>Data Analytics</li>
-        <li>AI Prompt Engineering</li>
-       </ul>
-    
-     <h2>Projects</h2>
+    <!-- Header -->
+    <header>
+        <h1>Courtney Cline</h1>
+        <p>David Eccle School of Business Student | University of Utah</p>
+    </header>
 
-    <h3>AI Business Analysis</h3>
-    <p>Project description coming soon.</p>
+    <!-- About section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a Junior at the David Eccles School of Business at the 
+            University of Utah. I want to major in Information Systems, 
+            with a minor in Entrepreneurship. I enjoy learning how
+            technology can help organizations make better decisions and
+            improve their business processes. My career interests include
+            marketing, analytics, and using AI to solve business problems.
+        </p>
+    </section>
 
-    <h3>Data Visualization</h3>
-    <p>Project description coming soon.</p>
+    <!-- Skills section -->
+    <section id="skills">
+        <h2>Skills</h2>
 
-    <h3>Web Development</h3>
-    <p>Project description coming soon.</p>
+        <ul class="skills-list">
+            <li>Microsoft Excel</li>
+            <li>Data Analytics</li>
+            <li>AI Prompt Engineering</li>
+            <li>HTML</li>
+            <li>GitHub</li>
+            <li>Marketing</li>
+        </ul>
+    </section>
 
-    <h3>KPMG Group Project</h3>
-    <p>Project description coming soon.</p>
+    <!-- Projects section -->
+    <section id="projects">
+        <h2>Projects</h2>
 
-    <h2>Resume</h2>
-    <p>Resume coming soon.</p>
+        <div class="projects">
+            <div class="project-card">
+                <h3>AI Business Analysis</h3>
+                <p>An AI-assisted analysis of a business problem.</p>
+            </div>
 
-    <h2>Contact</h2>
-    <p>Email: courtney.cline@school.edu</p>
-    <p>GitHub: https://github.com/courtneycline24</p>
+            <div class="project-card">
+                <h3>Data Visualization</h3>
+                <p>A project presenting business data through visualizations.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Web Development</h3>
+                <p>A responsive website created using HTML and CSS.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>KPMG Group Project</h3>
+                <p>Project details will be added during the semester.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Resume coming soon.</p>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <p>Email: courtney.cline@school.edu</p>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/courtneycline24">
+                github.com/courtneycline24
+            </a>
+        </p>
+
+        <p>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/courtney-m-cline/">
+                View my LinkedIn profile
+            </a>
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Courtney Cline | Professional Portfolio</p>
+    </footer>
+
 </body>
 </html>
